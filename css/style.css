@@ -45,9 +45,8 @@ img {
 .header-container {
 	height: 100%;
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
 	align-items: center;
-	flex-wrap: wrap;
 	position: relative;
 	z-index: 1;
 	padding-top: 3%;
@@ -55,12 +54,12 @@ img {
 }
 
 .surface-text {
-	width: 175px;
-	height: 50px;
+	width: 100%;
 }
 
 .gyper {
 	text-decoration: none;
+	width: 175px;
 }
 
 .title {
@@ -180,13 +179,13 @@ li {
 	content: "";
 	position: absolute;
 	top: 0;
-	left: 22%;
+	left: 5%;
 }
 
 .basket-image {
 	content: "";
 	position: absolute;
-	left: 40%;
+	left: 48%;
 	top: 3%;
 }
 
@@ -194,15 +193,16 @@ li {
     width: 100%;
     padding-left: 0;
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .number {
 	color: #000000;
 	font-size: 18px;
 	font-weight: 700;
-	position: relative;
 	top: 40px;
-	margin-right: 35px; 
+	margin-right: 15px; 
 }
 
 .number:after {
@@ -227,6 +227,7 @@ li {
 	text-transform: uppercase;
 	font-size: 36px;
 	font-weight: 700;
+	display: flex;
 }
 
 .desc {
@@ -345,7 +346,7 @@ li {
 .footer-text {
 	position: relative;
 	text-align: center;
-	z-index: 4;
+	z-index: 1;
 	padding-top: 5%;
 	padding-bottom: 2%;
 }
@@ -395,7 +396,13 @@ li {
 	margin-top: 15%;
 }
 
+.gyper-footer {
+	display: block;
+	margin: auto;
+}
+
 @media (max-width: 959px) {
+	
 	.header {
 		background-image: url(../images/football_1280.jpg);
 		max-width: 100%;
@@ -405,13 +412,17 @@ li {
 		font-size: 64px;
 	}
 
+	.title-part {
+		margin-left: 25%;
+	}
+
 	.regby-image {
 		top: 7%; 
 		left: -15%;
 	}
 
 	.basket-image {
-		left: 44%;
+		left: 51%;
 		top: 10%;
 	}
 
@@ -459,7 +470,7 @@ li {
 	}
 
 	.box {
-		top: 59%;
+		top: 64vw;
 		left: 5%;
 		width: 15vw;
 		height: 15vw;
@@ -487,9 +498,9 @@ li {
 	.widgets-footer {
 		margin-top: 25%;
 	}
-
-
 }
+
+
 
 @media (max-width: 767px) {
 
@@ -573,6 +584,7 @@ li {
 		left: 3%;
 		width: 22vw;
 		height: 22vw;
+		top: 90vw;
 	}
 
 	.box-text {
@@ -593,6 +605,11 @@ li {
 		width: 70px;
 		height: 70px;
 		margin-bottom: 20%;
+	}
+
+	.footer-text {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.footer-title {
