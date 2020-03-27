@@ -345,7 +345,7 @@ li {
 
 .footer-text {
 	position: relative;
-	text-align: center;
+	align-items: center;
 	z-index: 1;
 	padding-top: 5%;
 	padding-bottom: 2%;
@@ -632,9 +632,7 @@ li {
 
 	.widgets-footer {
 		flex-wrap: wrap;
-		max-width: 83%;
-		margin-left: auto;
-		margin-right: auto;
+		width: 80%;
 	}
 
 	.app, .go {
